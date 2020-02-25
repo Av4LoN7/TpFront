@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Projet web</title>
+    <link rel="stylesheet" href="projetHtml2.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- navbar -->
+<div class="container-fluid">
+    <div class="row">
+        <div id="logo" class="d-flex col align-items-center justify-content-center">
+            <img src="monogramme_gaumont.png" alt="">
+        </div>
+        <div class="col-10 col-md-11">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse center" id="navbarTogglerDemo03">
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-4">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+                        </li>
+                        </ul>
+                    </div>
+            </nav>
+        </div>
+    </div>
+</div>
+<!-- Large modal -->
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <section id="resa">
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="col">
+                      <em><h2 style="text-align: left;">Réservé votre séance</h2></em>
+                  </div>
+              </div>
+              <div class="row">   
+                        <table class="table">
+                            <tr>
+                            <th>Tarif</th>
+                            <th>Séance</th>
+                            <th>Quantité</th>
+                            <th>Prix unitaire</th>
+                            <th>Prix total</th>
+                            </tr>
+                            <div class="forClone">
+                                    <tr class="tableRowClone">
+                                        <td>
+                                            <select class="choixTarif" name="tarif" id="">
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select class="seance" name="seance" id="">
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <input class="howMuch" type="number" min="0" value="1">
+                                        </td> 
+                                        <td>
+                                            <p class="prixUnit">10e</p>
+                                        </td>
+                                        <td>
+                                            <p class="prixTotal">10e</p>
+                                        </td> 
+                                    </tr>
+                            </div>
+                        </table>
+                        <div class="row">
+                            <div class="col btnModal">
+                                <button class="btn btn-muted col-2">FERMER</button>
+                                <button class="btn btn-danger col-3">ANNULER RESERVATION</button>
+                                <button type="button" class="btn btn-success col-3" onclick="newLine()">NOUVELLE RESERVATION</button>
+                                <button class="btn btn-primary col-3">ENREGISTRER</button>
+                            </div>
+                        </div>
+              </div>
+          </div>
+      </section>
+    </div>
+  </div>
+</div>
+<!-- background image-->
+<div id="testBackground">       
+</div>
+<!-- film a l'affiche -->
+<section id="filmAffiche">
+        <h2 class="description">Les films à l'affiche</h2>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-4 ">
+                <img class="img-fluid imgAffiche" src="cinema.jpg" alt="">
+                <h2 class="description">Description</h2>
+            <p class="pDescription">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Ab fugiat, explicabo animi voluptates nihil culpa possimus fuga odit
+                necessitatibus esse, modi, 
+                commodi beatae odio quaerat dolores optio porro nesciunt. Dolorum.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Ab fugiat, explicabo animi voluptates nihil culpa possimus fuga odit
+                 necessitatibus esse, modi, 
+                commodi beatae odio quaerat dolores optio porro nesciunt. Dolorum.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Ab fugiat, explicabo animi voluptates nihil culpa possimus fuga odit
+                 necessitatibus esse, modi, 
+                commodi beatae odio quaerat dolores optio porro nesciunt. Dolorum.
+            </p>
+            <button class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Reserver</button>
+            </div>
+            <div class="col-12 col-md-4 ">
+                    <img class="img-fluid imgAffiche" src="cinema.jpg" alt="">
+                    <h2 class="description">Description</h2>
+            <p class="pDescription">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Ab fugiat, explicabo animi voluptates nihil culpa possimus fuga odit
+                necessitatibus esse, modi, 
+                commodi beatae odio quaerat dolores optio porro nesciunt. Dolorum.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Ab fugiat, explicabo animi voluptates nihil culpa possimus fuga odit
+                 necessitatibus esse, modi, 
+                commodi beatae odio quaerat dolores optio porro nesciunt. Dolorum.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Ab fugiat, explicabo animi voluptates nihil culpa possimus fuga odit
+                 necessitatibus esse, modi, 
+                commodi beatae odio quaerat dolores optio porro nesciunt. Dolorum.
+            </p>
+            <button class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Reserver</button>
+            </div>
+            <div class="col-12 col-md-4 ">
+                    <img class="img-fluid imgAffiche" src="cinema.jpg" alt="">
+                    <h2 class="description">Description</h2>
+            <p class="pDescription">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Ab fugiat, explicabo animi voluptates nihil culpa possimus fuga odit
+                necessitatibus esse, modi, 
+                commodi beatae odio quaerat dolores optio porro nesciunt. Dolorum.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Ab fugiat, explicabo animi voluptates nihil culpa possimus fuga odit
+                 necessitatibus esse, modi, 
+                commodi beatae odio quaerat dolores optio porro nesciunt. Dolorum.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Ab fugiat, explicabo animi voluptates nihil culpa possimus fuga odit
+                 necessitatibus esse, modi, 
+                commodi beatae odio quaerat dolores optio porro nesciunt. Dolorum.
+            </p>
+            <button class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Reserver</button>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- info pratique -->
+<div class="jumbotron">
+        <section id="infoPratique">
+                <h2 style="text-align: center;margin-bottom: 2rem;">INFOS PRATIQUE</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                                <h3 style="padding-bottom: 10%;">Avantages cinéma</h3>
+                                <ul>    
+                                    <li>
+                                        <strong>Salle climatisée</strong>
+                                    </li>
+                                    <li>
+                                        <strong>Toutes les salles en IMAX</strong>
+                                    </li>
+                                    <li>
+                                        <strong>Son digital PRO LOGIC SURROUND</strong>
+                                    </li>
+                                </ul>
+                        </div>
+                        <div class="col-12 col-md-4 tabInfo">
+                                <h3 style="padding-bottom: 10%;">Tableau des tarifs</h3>  
+                                <table class="table table-bordered"> 
+                                            <tr>
+                                            <th></th>
+                                            <th colspan="2">LUNDI AU VENDREDI</th>
+                                            <th rowspan="2">WEEK-END</th>  
+                                            </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>de 9h à 18h</td>
+                                        <td>soirée</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th>-14 ans</th>
+                                        <td> 5e</td>
+                                        <td> 6e</td>
+                                        <td> 6e</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Plein tarif</th>
+                                        <td> 10e</td>
+                                        <td> 12e</td>
+                                        <td> 12.5e</td>
+                                    </tr>
+                                </table>
+                        </div>
+                    </div>
+                </div>
+        </section>
+</div>
+<!-- iframe + adresse -->
+<section id="localisation">
+        <h2 style="margin-top: 2%;">Nous trouver :</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1717.4720596291506!2d3.823374689121763!3d43.61836273756202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1572436690138!5m2!1sfr!2sfr" 
+            ></iframe>
+            </div>
+            <div class="col-12 col-md-4 my-auto tabInfo">
+                    <h3>ADRESSE</h3>
+                    <p>Rue machin machin, 34000 Montpellier</p>
+                    <h3>TELEPHONE</h3>
+                    <p>00000000</p>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="jumbotron formBottom">
+        <section id="contact">
+                <h2>Formulaire de contact </h2>
+            <div class="container">
+                <div class="row">
+                    <form> 
+                        <input class="form-control form-control-lg" type="text" name="nom" placeholder="NOM">
+
+                        <input class="form-control form-control-lg" type="text" name="prenom" placeholder="PRENOM">
+                        
+                        <input class="form-control form-control-lg" type="email" name="email" placeholder="EMAIL">     
+
+                        <input class="form-control form-control-lg" type="tel" name="telephone" placeholder="TELEPHONE">
+            
+                        <input class="form-control form-control-lg" type="text" name="sujet" placeholder="SUJET">
+
+                        <textarea class="form-control form-control-lg" id="exampleFormControlTextarea3" rows="7" placeholder="Votre méssage ici..."></textarea>
+                            
+                        <input class="btn btn-primary" type="submit" value="Envoyer">
+                    </form>
+                </div>
+            </div>
+        </section>
+</div>
+    <footer>
+        <section id="sociaux">
+                <h2>Suivez nous sur les réseaux !</h2>
+                <i class="fa fa-facebook" style="font-size:24px">acebook</i>
+                <i class="fa fa-twitter" style="font-size:24px">Twitter</i>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="form">
+                                <form action="">
+                                    <div class="form-group form-control-lg">
+                                        <input type="text" placeholder="votre émail">
+                                    </div>
+                                    <button class="btn btn-danger" type="submit" value="Envoyer" placeholder="">S'inscrire à la newsletter</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>                 
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="projetHtml2.js"></script>
+</body>
+</html>
